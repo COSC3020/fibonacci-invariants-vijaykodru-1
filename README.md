@@ -27,3 +27,16 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+
+ANSWER:
+
+A good invariant for the recursive fib() function that I implemented is that at the start of each recursive call, the array returned by fib(n-1) correctly contains the Fibonacci sequence from fib(0) to fib(n-1), with the last two elements representing fib(n-2) and fib(n-1). Initially, fib(0) and fib(1) return the correct Fibonacci sequences [0] and [0, 1] as they are the base cases respectively. For anything n > 1, the function recursively calls fib(n-1), and then appends the next Fibonacci number i.e, fib(n) = fib(n-1) + fib(n-2). This invariant ensures that the function builds the correct Fibonacci sequence step by step based on the correct values that fib(n-1) produces.
+
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice
+
+
+
+
+
